@@ -9,11 +9,17 @@
 :root {
     --primary-color: #0a348b;
     --primary-light: #3a5ca8;
-    --secondary-color: #f8f9fa;
-    --accent-color: #ff6b6b;
-    --light-gray: #f5f7fa;
-    --dark-gray: #6c757d;
-    --text-color: #333;
+    --secondary-color: #f3f4f6;
+    --accent-color: #9ca3af;
+    --light-gray: #f3f4f6;
+    --dark-gray: #6b7280;
+    --text-color: #111827;
+    --text-muted: #4b5563;
+    --border-color: #e5e7eb;
+    --surface-color: #ffffff;
+    --muted-bg: #eef2f7;
+    --footer-bg: #111827;
+    --footer-text: #9ca3af;
     --white: #ffffff;
     --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
@@ -26,7 +32,7 @@ html {
 body {
     line-height: 1.6;
     color: var(--text-color);
-    background-color: #fff;
+    background-color: var(--surface-color);
     font-size: 16px;
 }
 
@@ -120,7 +126,7 @@ nav .container {
     justify-content: center;
     text-align: center;
     padding: 120px 20px 80px;
-    background-color: #f8fafc;
+    background-color: var(--secondary-color);
     position: relative;
     overflow: hidden;
 }
@@ -132,7 +138,7 @@ nav .container {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(53, 122, 189, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(10, 52, 139, 0.08) 0%, rgba(58, 92, 168, 0.08) 100%);
     z-index: 0;
 }
 
@@ -146,7 +152,7 @@ nav .container {
     margin-bottom: 1.5rem;
     font-weight: 700;
     line-height: 1.2;
-    color: #1a1a1a;
+    color: var(--text-color);
 }
 
 .hero p {
@@ -171,7 +177,7 @@ nav .container {
     left: 0;
     width: 100%;
     height: 12px;
-    background-color: rgba(74, 144, 226, 0.2);
+    background-color: rgba(10, 52, 139, 0.18);
     z-index: -1;
     border-radius: 3px;
 }
@@ -240,17 +246,17 @@ section {
 /* About Section */
 .about-section {
     padding: 60px 0;
-    background-color: #fff;
+    background-color: var(--surface-color);
 }
 
 .section-title {
     font-size: 2rem;
     margin-bottom: 40px;
-    color: #333;
+    color: var(--text-color);
     font-weight: 600;
     text-align: center;
     padding-bottom: 15px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid var(--border-color);
     width: 100%;
     max-width: 1200px;
     margin: 0 auto 40px;
@@ -290,14 +296,14 @@ section {
     margin-bottom: 20px;
     font-size: 1rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--text-muted);
 }
 
 /* Work Process */
 .work-process {
     margin: 60px 0 30px;
     padding: 60px 0;
-    background-color: #f9f9f9;
+    background-color: var(--secondary-color);
     border-radius: 8px;
 }
 
@@ -305,7 +311,7 @@ section {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 50px;
-    color: #333;
+    color: var(--text-color);
     font-weight: 600;
 }
 
@@ -327,7 +333,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
+    background: var(--surface-color);
     border: 1px solid rgba(10, 52, 139, 0.12);
     border-top: 4px solid rgba(10, 52, 139, 0.85);
     border-radius: 12px;
@@ -399,12 +405,12 @@ section {
 .process-step h4 {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #333;
+    color: var(--text-color);
     font-weight: 600;
 }
 
 .process-step p {
-    color: #666;
+    color: var(--dark-gray);
     line-height: 1.7;
     font-size: 0.95rem;
 }
@@ -416,14 +422,14 @@ section {
 }
 
 .contact-info h3 {
-    color: #333;
+    color: var(--text-color);
     font-size: 1.5rem;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
 .contact-info p {
-    color: #666;
+    color: var(--dark-gray);
     margin-bottom: 25px;
     font-size: 1rem;
 }
@@ -435,13 +441,13 @@ section {
 }
 
 .social-links a {
-    color: #4a90e2;
+    color: var(--primary-color);
     font-size: 1.5rem;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #357abd;
+    color: var(--primary-light);
     transform: translateY(-3px);
 }
 
@@ -509,7 +515,7 @@ section {
 
 /* 연락처 섹션 */
 .contact-section {
-    background-color: #f8fafc;
+    background-color: var(--secondary-color);
     padding: 60px 0;
     text-align: center;
 }
@@ -517,7 +523,7 @@ section {
 .contact-simple {
     max-width: 600px;
     margin: 0 auto;
-    background: white;
+    background: var(--surface-color);
     padding: 50px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -559,7 +565,7 @@ section {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: #f0f4ff;
+    background: var(--muted-bg);
     color: var(--primary-color);
     display: flex;
     align-items: center;
@@ -575,8 +581,8 @@ section {
 
 /* 푸터 */
 .footer {
-    background: #1a1a1a;
-    color: #999;
+    background: var(--footer-bg);
+    color: var(--footer-text);
     padding: 30px 0;
     text-align: center;
     font-size: 0.95rem;
@@ -588,8 +594,8 @@ section {
 
 /* 푸터 스타일 */
 .footer {
-    background: #1a1a1a;
-    color: #999;
+    background: var(--footer-bg);
+    color: var(--footer-text);
     padding: 30px 0;
     text-align: center;
     font-size: 0.95rem;
@@ -640,7 +646,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: white;
+    background: var(--surface-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -651,7 +657,7 @@ section {
 .spinner {
     width: 50px;
     height: 50px;
-    border: 5px solid #f3f3f3;
+    border: 5px solid var(--border-color);
     border-top: 5px solid var(--primary-color);
     border-radius: 50%;
     animation: spin 1s linear infinite;
@@ -713,7 +719,7 @@ section {
         left: -100%;
         width: 100%;
         height: calc(100vh - 80px);
-        background: white;
+        background: var(--surface-color);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -835,7 +841,7 @@ section {
 
 /* 연락처 섹션 */
 .contact {
-    background-color: white;
+    background-color: var(--surface-color);
     text-align: center;
 }
 
@@ -924,7 +930,7 @@ section {
 
 
 .works-section {
-    background-color: #fff;
+    background-color: var(--surface-color);
     padding: 60px 0;
 }
 .works-grid {
@@ -934,12 +940,12 @@ section {
     margin-top: 50px;
 }
 .work-category {
-    background: #fff;
+    background: var(--surface-color);
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
-    border: 1px solid #f0f0f0;
+    border: 1px solid var(--border-color);
 }
 .work-category:hover {
     transform: translateY(-5px);
